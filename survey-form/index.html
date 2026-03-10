@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Page Header -->
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p><br/>
+    <!--Main Survey Form -->
+    <form id="survey-form">
+      
+      <!--Personal Information -->
+      <label id="name-label">Name</label>
+      <input id="name" type="text" required placeholder="Enter your Name"></input><br/><br/>
+      <label id="email-label">Email</label>
+      <input id="email" type="email" required placeholder="Enter your email"></input><br/><br/>
+      <label id="number-label">Age</label>
+      <input min="5" max="70" id="number" type="number" placeholder="age"></input><br/><br/>
+      
+      <!--Role Selection-->
+      <label>Which option best describe your current role?</label> <br/><br/>
+      <select id="dropdown">
+        <option>Student</option>
+        <option>Designer</option>
+        <option>Developer</option>
+        <option>C-Suite</option>
+      </select><br/><br/>
+      <label>Would you recommend freeCodeCamp to a friend?</label><br/> <br/>
+      <input type="radio" value="Definitely" name="recommendation">Definitely </input>
+      <input type="radio" value="Maybe" name="recommendation">Maybe</input>
+      <input type="radio" value="Not Sure" name="recommendation">Not Sure</input>
+      <br/><br/>
+      
+      <!--Additional Feedback-->
+      <label>What would you like to see improved?</label><br/> <br/>
+      <input type="checkbox" value="Swift"  name="recommendation"> Add Swift Course path</input>
+      <input type="checkbox" value="Mobile Apps" name="recommendation"> Mobile Apps</input>
+      <br/><br/>
+   
+       <label>Any comments or suggestions</label><br/> <br/>
+       <textarea></textarea>
+       <br/><br/>
+      <button id="submit" type="submit">Submit</button> 
+    </form> 
+  </body>
+</html>
